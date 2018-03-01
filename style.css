@@ -211,7 +211,7 @@
     
 }
  
-#skills>.resume>button{
+#skills>.resume>a>button{
     background: rgba(127, 140, 141,1);
     border: none;
     border-radius: 10px;
@@ -226,7 +226,7 @@
     margin-bottom: 5%;
 }
 
-#skills>.resume>button:hover{
+#skills>.resume>a>button:hover{
     background: rgba(52, 73, 94, 0.8);
     cursor: pointer;
     color: #94a6be;
@@ -314,7 +314,7 @@
         margin: 10px;         
         width: 100%;
     }
-    #skills>.resume>button{
+    #skills>.resume>a>button{
         font-size: .8em;
     }
 
@@ -366,7 +366,7 @@
         margin: 10px;         
         width: 100%;
     }
-    #skills>.resume>button{
+    #skills>.resume>a>button{
     font-size: .5em;
     }
 
