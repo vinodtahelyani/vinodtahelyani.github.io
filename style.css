@@ -1,0 +1,427 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.wrapper{
+    background: rgba(52, 73, 94, 0.5);
+    padding: 15px 15px 0 15px;
+    position: fixed;
+    width: 100%;
+}
+
+.wrapper>a>.logo{
+    background: url('./vt.png') no-repeat ;
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    float: left;
+}
+.wrapper>nav>ul>li{
+    float: right;
+    list-style: none;
+    padding: 15px;
+    font-size: 18px;
+}
+.wrapper>nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper>nav>ul>li>a:hover{
+    text-decoration: underline;
+}
+
+.wrapper::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*
+-------------------------
+--------banner-----------
+-------------------------
+*/
+
+#main-banner{
+    width: 100%;
+    background:url(business.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    
+}
+
+#main-banner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #eef5ff;
+}
+
+#main-banner>.sign{
+    margin-bottom: 150px;
+}
+
+#main-banner>.greeting{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    
+    letter-spacing: 1px;
+}
+
+#main-banner>.name{
+    font-family: 'Alex Brush', cursive;
+    color: #eef5ff;
+    font-size: 10em;
+    
+}
+#main-banner>.intro{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#main-banner>.navigator>a>.fa{
+    margin-top: 50px;
+    font-size: 40px;
+    color: #eef5ff;
+    animation: shake .7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0%{transform: translate(0,1px)}
+    10%{transform: translate(0,1px)}
+    20%{transform: translate(0,1px)}
+    30%{transform: translate(0,1px)}
+    40%{transform: translate(0,1px)}
+    50%{transform: translate(0,-1px)}
+    60%{transform: translate(0,-1px)}    
+    70%{transform: translate(0,-1px)}    
+    80%{transform: translate(0,-1px)}    
+    90%{transform: translate(0,-1px)}    
+    100%{transform: translate(0,-1px)}
+}
+
+#main-banner>.navigator>a>.fa:hover{
+    color: rgba(52, 73, 94, 0.9);
+}
+
+#about{
+    text-align: center;    
+    width: 100%;
+    background:white;
+    color: rgba(52, 73, 94, 0.8);
+    height: 100%;
+    padding: 30px;
+    font-size: 25px;
+    font-family:  serif;
+
+}
+
+#about>.heading{
+    font-family:  'Alex Brush', cursive;
+    font-size: 70px;
+    margin:5%
+}
+
+#about>img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 1px solid rgba(52, 73, 94, 0.5);
+}
+#about>.description>.ques{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;    
+}
+
+#about>.description>.main{
+    width: 70%;
+    padding:20px 0;
+    margin: 0 auto;     
+}
+
+#about>.description>.main>p>span{
+    color: black;
+}
+#about::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+#skills{
+    width: 100%;
+    background:url(skill.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #eef5ff;
+    height: 100%;
+    font-size: 25px;
+    font-family:  serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#skills>.heading{
+    text-align: center;
+    font-family:  'Alex Brush', cursive;
+    font-size: 70px;
+    margin:5%    
+}
+#skills>.type{
+    margin-left: 10%;
+    padding: 30px 0;
+}
+#skills>.type>.scale{
+    float: right;
+    background: rgba(52, 73, 94, 0.8);
+    width: 50%;
+    height: 36px;
+    margin-right: 20%;
+    border: 3px solid rgba(127, 140, 141,1);
+}
+
+.fill{
+    line-height: 30px;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.html { width: 75%; background-color: rgba(127, 140, 141,.8);}
+.js { width: 80%; background-color: rgba(127, 140, 141,.8);}
+.python { width: 50%; background-color: rgba(127, 140, 141,.8);}
+.java { width: 40%; background-color: rgba(127, 140, 141,.8);}
+.db { width: 60%; background-color: rgba(127, 140, 141,.8);}
+
+#skills>.resume{
+    text-align: center;
+    
+}
+ 
+#skills>.resume>button{
+    background: rgba(127, 140, 141,1);
+    border: none;
+    border-radius: 10px;
+    color: #eef5ff;
+    padding: 5px;
+    width: 20%;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    margin-bottom: 5%;
+}
+
+#skills>.resume>button:hover{
+    background: rgba(52, 73, 94, 0.8);
+    cursor: pointer;
+    color: #94a6be;
+    outline: none;
+}
+
+#projects{
+    width: 100%;
+    background:url(projects2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #eef5ff;
+    height: 700px;
+    font-size: 25px;
+    font-family:  serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hire{
+    background: rgba(52, 73, 94, 0.8);
+    width: 100%;
+    background-size: cover;
+    color: #eef5ff;
+    height: 700px;
+    font-size: 25px;
+    font-family:  serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hire>.heading{
+    margin-left: 20%;    
+    font-family:  'Alex Brush', cursive;
+    font-size: 70px;
+    color: #eef5ff;
+}
+
+#hire>p{
+    margin: 40px 20% 0 20%;
+}
+#hire>.address{
+    margin: 20px 20%;  
+}
+
+#hire>.address>span{
+    color:black;
+    font-size: 18px; 
+}
+
+
+#hire>.social{
+    margin-left: 20%;
+}
+#hire>.social>a{
+    padding: 10px;
+}
+#hire>.social>a>img{
+    height: 25px;
+    width: 25px;
+}
+#hire>p>a{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width : 942px){
+    #main-banner>.greeting{
+        font-size: 1em;
+       }
+       #main-banner>.intro{
+           font-size: 1em;
+       }
+    #main-banner>.name{
+        font-size: 6em;
+    }
+    #skills>.type{
+        margin:5%; 
+    }
+    #skills>.type>.scale{
+        margin: 10px;         
+        width: 100%;
+    }
+    #skills>.resume>button{
+        font-size: .8em;
+    }
+
+
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%;
+        background: url(burger.png) no-repeat 94% center;
+        background-size: contain;
+        cursor: pointer;
+    }
+    .wrapper>nav>ul>li{  
+        float: none;
+        text-align: right;
+    }
+    .wrapper>nav{
+        margin: 0;
+        width: 100%;
+    }
+    .wrapper>nav>ul{
+        display: none;
+    }
+    .wrapper>nav>.open{
+        border-top: 1px solid rgba(52, 73, 94, 0.8);
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #main-banner{
+        height:560px;
+    }
+    #main-banner>.greeting{
+    font-size: 1em;
+    }
+    #main-banner>.intro{
+        font-size: 1em;
+
+    }
+    #main-banner>.name{
+        font-size: 4em;
+    }
+    #skills>.type{
+        margin-left:5% ; 
+        /* width: calc(100% - 22px); */
+    }
+    #skills>.type>.scale{
+        margin: 10px;         
+        width: 100%;
+    }
+    #skills>.resume>button{
+    font-size: .5em;
+    }
+
+.burger-nav{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url(burger.png) no-repeat 94% center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.wrapper>nav>ul>li{
+    
+float: none;
+text-align: right;
+}
+.wrapper>nav{
+    margin: 0;
+    width: 100%;
+    
+}
+.wrapper>nav>ul{
+    display: none;
+}
+.wrapper>nav>.open{
+    border-top: 1px solid rgba(52, 73, 94, 0.8);
+    display: block;
+}
+#about>.description>.ques{
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;  
+    text-align: justify;  
+}
+
+#about>.description>.main{
+    width: 95%;
+    padding:20px 0;
+    margin: 0 auto;     
+    text-align: justify;      
+}
+#hire>.heading{
+    text-align: center;
+    margin: 0;
+}
+}
+
+footer{
+    background: rgba(21, 29, 37, 0.8);
+    text-align: center;
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+footer>p{
+
+}
