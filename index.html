@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        
+        </script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+      
+        <a href="#"> <div class="logo"></div> </a>
+        <a  href="javascript:void(0);" class="burger-nav" onclick="myOpen()"></a>
+        <nav >
+            <ul id="topNav" class="nav">
+                <li><a href="#hire">Say Hello!</a></li>
+                <li><a href="https://github.com/vinodtahelyani">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    
+        </div>
+    </header>
+    <div id="main-banner">
+        <div class="sign">
+
+        </div>
+        
+        <div class="greeting">
+            Hello,
+            I'm
+        </div>
+        <div class="name">
+            Vinod Tahelyani
+        </div>
+        <div class="intro">
+            Programmer | Developer | Learner
+    </div>
+    <div class="navigator">
+       <a href="#about"><i class="fa fa-angle-double-down"></i></a>
+    </div>
+    
+    </div>
+    <div id="about">
+        <div class="heading">
+            About Me
+        </div>
+        <img src="me.jpg" alt="">
+        <div class="description">
+            <div class="ques">
+            I guess you're here because you want know a bit about me.huh?I'm not at all good person at talking about myself, but I'll give it a shot.
+        </div>
+            <div class="main">
+                <p>
+                    Currently, I'm pursuing my <span>B.Tech in Information Technology from VIT University, Vellore</span>. I like to code, solve problems, listen to music and have a cup of non-sense chat some evening.I'm a fitness enthusiast too. I do the things in my own unusual way. I like to know how things work. For now, I'm developing my interest in <span>Fullstack Web Development in JavaScript.</span>
+                </p>  
+                <p>
+                </p>
+            </div>
+        </div> 
+    </div>
+
+    <div id="skills">
+        <div class="heading">
+            Skills
+        </div>
+
+        <div class="type">HTML5 and CSS3
+            <div class="scale">
+                <div class="fill html">75%</div>
+            </div>
+        </div>
+
+        <div class="type">JavaScript
+            <div class="scale">
+                <div class="fill js">80%</div>
+            </div>
+        </div>
+
+        <div class="type">Pyhton
+            <div class="scale">
+                <div class="fill python">50%</div>
+            </div>
+        </div>
+
+        <div class="type">C, C++ and Java
+            <div class="scale">
+                <div class="fill java">40%</div>
+            </div>
+        </div>
+
+        <div class="type">MySQL and MongoDB
+            <div class="scale">
+                <div class="fill db">60%</div>
+            </div>
+            
+        </div>
+        <div class="resume">
+        <button>My Resume</button>            
+        </div>
+    </div>
+
+   
+    <div id="hire">
+        <div class="heading">
+            Say Hello!
+        </div>
+
+        <p>I'll be very happy if you think I'm suitable for your project or just want to say a friendly Hello!
+        Currently I'm available for freelancing projects, internships and part-time jobs.</p>
+            <div class="address">
+            Contact Me<br>
+            <img src="location.svg" alt="" height="15px" width="15px"> <span><u>Men's Hostel Vit University,<br> Vellore, 632014,<br>Tamil Nadu, India</u></span><br>
+            <img src="phone.svg" alt="" height="15px" width="15px"> <span><u>+91 8349315737</u>, <u>+91 8839141585</u></span>
+            
+        </div>
+            
+        
+        <div class="social">
+            <span>Social Media</span> <br>
+             <a href="mailto:vinodtahalyani2@gmail.com"><img src="mail.svg" alt=""></a> 
+             <a href="https://github.com/vinodtahelyani"><img src="github.svg" alt=""></a>
+             <a href="https://www.facebook.com/vinodtahelyani"><img src="f.svg" alt=""></a>
+             <a href="www.linkedin.com/in/vinod-tahelyani-070860154"><img src="in.svg" alt=""></a>
+            
+        </div>
+            
+    </div>
+    <footer>
+        <p>Copyright &copy; Vinod Tahelyani 2018</p>
+    </footer>
+    <script>
+        function myOpen() {
+            var x = document.getElementById("topNav");
+            if (x.className === "nav") {
+                x.className += " open";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+        
+</body>
+</html>
